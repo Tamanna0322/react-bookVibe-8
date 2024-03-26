@@ -1,4 +1,3 @@
-import { toast } from "react-toastify";
 
 const getStoredBooks = () =>{
     const storedBooks = localStorage.getItem('books');
@@ -8,17 +7,23 @@ const getStoredBooks = () =>{
     return [];
 }
 
+const saveWish = id =>{
+    const storedBooks = getStoredBooks();
+    const exist = storedBooks.find(bookId => bookId === id);
+    if(!exist){
+        storedBooks.push(id);
+        localStorage.setItem('books', JSON.stringify(storedBooks))
+    }
+}
 
 const saveBooks = id =>{
     const storedBooks = getStoredBooks();
     const exist = storedBooks.find(bookId => bookId === id);
     if(!exist){
         storedBooks.push(id);
-         toast.success("Added to the Read List", {
-            position: "top-right"
-          });
         localStorage.setItem('books', JSON.stringify(storedBooks))
     }
+   
 }
 
-export {getStoredBooks, saveBooks};
+export {getStoredBooks, saveBooks, saveWish};
