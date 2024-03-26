@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "Quick Bright Things",
+      "author": "Victoria Blackwood",
+      "image": "https://i.ibb.co/pXGY8rT/large-50c05cfba09243d8b05a251e2205c6ec.jpg",
+      "review": "A gripping mystery that keeps you on the edge of your seat until the very end. With intricate plot twists and well-developed characters, Victoria Blackwood weaves a tale of suspense and intrigue that will leave readers guessing. From the eerie atmosphere of Crimson Manor to the shocking revelations, this book is a must-read for fans of the genre.",
+      "totalPages": 320,
+      "rating": 4.5,
+      "category": "Mystery",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "Eclipse Books",
+      "yearOfPublishing": 2019
+    },
+    {
+      "bookId": 2,
+      "bookName": "Beyond Pain",
+      "author": "Jonathan Steele",
+      "image": "https://i.ibb.co/rm9GYqP/large-cb9351da011fd430421a7334725326f9.jpg",
+      "review": "Beyond Pain takes readers on a mind-bending journey through time and space. Jonathan Steele masterfully blends elements of science fiction with profound philosophical questions, inviting readers to ponder the nature of existence and the universe itself. With its compelling narrative and richly drawn characters, this book is sure to leave a lasting impression.",
+      "totalPages": 400,
+      "rating": 4.2,
+      "category": "Science Fiction",
+      "tags": ["Time Travel", "Existentialism"],
+      "publisher": "Nebula Publishing",
+      "yearOfPublishing": 2021
+    },
+    {
+      "bookId": 3,
+      "bookName": "Rieden Reece",
+      "author": "Emily Nightingale",
+      "image": "https://i.ibb.co/BVwV4f4/large-52ecd3c8a4ca8bd258bed44d68cc6c63.jpg",
+      "review": "Rieden Reece is an atmospheric thriller that will keep readers on the edge of their seats. Emily Nightingale crafts a chilling tale of suspense and mystery, filled with unexpected twists and turns. From its gripping opening to its shocking conclusion, this book is a must-read for fans of the genre.",
+      "totalPages": 280,
+      "rating": 4.7,
+      "category": "Thriller",
+      "tags": ["Suspense", "Dark"],
+      "publisher": "Midnight Publishing",
+      "yearOfPublishing": 2020
+    },
+    {
+      "bookId": 4,
+      "bookName": "What You Meant To Me",
+      "author": "Alexander Frost",
+      "image": "https://i.ibb.co/GxdcvhJ/large-33d88b1e4731352e64c17c3eb1a8b523.jpg",
+      "review": "What You Meant To Me is an epic fantasy adventure that will captivate readers from beginning to end. Alexander Frost transports readers to a world filled with magic, dragons, and intrigue, where nothing is as it seems. With its richly imagined setting and complex characters, this book is sure to leave a lasting impression.",
+      "totalPages": 500,
+      "rating": 4.8,
+      "category": "Fantasy",
+      "tags": ["Adventure", "Magic"],
+      "publisher": "Dragon Books",
+      "yearOfPublishing": 2018
+    },
+    {
+      "bookId": 5,
+      "bookName": "Dreamer's Folly",
+      "author": "Isabella Rivers",
+      "image": "https://i.ibb.co/jZMjDvM/large-0a5b75545a621ae63dcf8f91ac97d955.jpg",
+      "review": "Dreamer's Folly is a haunting tale of love and loss set against the backdrop of a small seaside town. Isabella Rivers crafts a beautifully written story that explores the depths of human emotion and the complexities of relationships. With its evocative prose and compelling characters, this book is impossible to put down.",
+      "totalPages": 350,
+      "rating": 4.6,
+      "category": "Romance",
+      "tags": ["Drama", "Small Town"],
+      "publisher": "Seabreeze Publishing",
+      "yearOfPublishing": 2017
+    },
+    {
+      "bookId": 6,
+      "bookName": "Where The Stars Hide",
+      "author": "Michael Chambers",
+      "image": "https://i.ibb.co/p4f0Sn6/large-c05abc53bbba09206f7fc3d5a78817b4.jpg",
+      "review": "Where The Stars Hide is a mind-bending exploration of quantum mechanics and its philosophical implications. Michael Chambers delves into the mysteries of the universe, challenging readers to question the nature of reality itself. With its thought-provoking concepts and engaging narrative, this book is a must-read for anyone fascinated by science and philosophy.",
+      "totalPages": 380,
+      "rating": 4.4,
+      "category": "Science",
+      "tags": ["Physics", "Philosophy"],
+      "publisher": "Cosmos Books",
+      "yearOfPublishing": 2019
+    }
+  ]
+  
