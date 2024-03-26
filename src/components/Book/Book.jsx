@@ -1,23 +1,27 @@
 import PropTypes from 'prop-types'; 
+import { FaRegStar } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const Book = ({ book }) => {
-    console.log(book)
+    const {image, tags, bookName, author, category, rating} = book
     return (
-        <div className="border p-4 rounded-lg">
+        <NavLink to='/bookDetails' className="border p-4 rounded-lg">
             <div className=" bg-slate-200 flex h-[200px] justify-center rounded-lg">
-                <img className="w-[150px] h-full p-5 object-cover" src="https://i.ibb.co/pXGY8rT/large-50c05cfba09243d8b05a251e2205c6ec.jpg" alt="" />
+                <img className="w-[150px] h-full p-5 object-cover" src={image} alt="" />
             </div>
-            <div>
-                <h3 className="mt-4">Tags</h3>
+            <div className='mt-4 flex justify-around text-[#23BE0A] font-bold'>
+               {
+                  tags.map((tag, idx) => <p key={idx}>{tag}</p>)
+               }
             </div>
-            <h3 className="text-2xl text-black mt-3">The cather in the eye</h3>
-            <p className="mt-2 mb-3">By: Anwar Hossain</p>
+            <h3 className="text-2xl font-bold text-black mt-3">{bookName}</h3>
+            <p className="mt-2 text-black mb-3">By: {author}</p>
             <hr />
-            <div className="flex mt-3 justify-between">
-                <p>Fiction</p>
-                <p>Rating</p>
+            <div className="flex mt-3 justify-between text-black">
+                <p>{category}</p>
+                <p className='flex items-center'>{rating} <FaRegStar className='ml-3'></FaRegStar> </p>
             </div>
-        </div>
+        </NavLink>
     );
 };
 

@@ -11,7 +11,7 @@ const Home = () => {
                     </div>
                     <div className="md:w-[49%] w-[80%] md:space-y-14 space-y-10 text-black">
                         <h1 className="md:text-6xl text-3xl font-bold">Books to freshen up your bookshelf</h1>
-                        <button className="btn bg-green-600 md:px-5 md:py-3 text-white">View The List</button>
+                        <button className="btn bg-[#23BE0A] md:px-5 md:py-3 text-white">View The List</button>
                     </div>
                 </div>
             </div>
