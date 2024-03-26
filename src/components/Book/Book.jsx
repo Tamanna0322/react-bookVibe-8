@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types'; 
 import { FaRegStar } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Book = ({ book }) => {
-    const {image, tags, bookName, author, category, rating} = book
+    const {id, image, tags, bookName, author, category, rating} = book
+    
     return (
-        <NavLink to='/bookDetails' className="border p-4 rounded-lg">
+        <Link to={`/book/${id}`} className="border p-4 rounded-lg">
             <div className=" bg-slate-200 flex h-[200px] justify-center rounded-lg">
                 <img className="w-[150px] h-full p-5 object-cover" src={image} alt="" />
             </div>
@@ -21,7 +22,7 @@ const Book = ({ book }) => {
                 <p>{category}</p>
                 <p className='flex items-center'>{rating} <FaRegStar className='ml-3'></FaRegStar> </p>
             </div>
-        </NavLink>
+        </Link>
     );
 };
 

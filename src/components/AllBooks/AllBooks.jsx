@@ -10,7 +10,7 @@ const AllBooks = () => {
             .then(res => res.json())
             .then(data => setBooks(data))
     }, [])
-    console.log(books);
+
     return (
         <div>
             <div className='mt-10'>

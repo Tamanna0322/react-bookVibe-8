@@ -1,6 +1,6 @@
 [
     {
-      "bookId": 1,
+      "id": 1,
       "bookName": "Quick Bright Things",
       "author": "Victoria Blackwood",
       "image": "https://i.ibb.co/pXGY8rT/large-50c05cfba09243d8b05a251e2205c6ec.jpg",
@@ -13,7 +13,7 @@
       "yearOfPublishing": 2019
     },
     {
-      "bookId": 2,
+      "id": 2,
       "bookName": "Beyond Pain",
       "author": "Jonathan Steele",
       "image": "https://i.ibb.co/rm9GYqP/large-cb9351da011fd430421a7334725326f9.jpg",
@@ -26,7 +26,7 @@
       "yearOfPublishing": 2021
     },
     {
-      "bookId": 3,
+      "id": 3,
       "bookName": "Rieden Reece",
       "author": "Emily Nightingale",
       "image": "https://i.ibb.co/BVwV4f4/large-52ecd3c8a4ca8bd258bed44d68cc6c63.jpg",
@@ -39,7 +39,7 @@
       "yearOfPublishing": 2020
     },
     {
-      "bookId": 4,
+      "id": 4,
       "bookName": "What You Meant To Me",
       "author": "Alexander Frost",
       "image": "https://i.ibb.co/GxdcvhJ/large-33d88b1e4731352e64c17c3eb1a8b523.jpg",
@@ -52,7 +52,7 @@
       "yearOfPublishing": 2018
     },
     {
-      "bookId": 5,
+      "id": 5,
       "bookName": "Dreamer's Folly",
       "author": "Isabella Rivers",
       "image": "https://i.ibb.co/jZMjDvM/large-0a5b75545a621ae63dcf8f91ac97d955.jpg",
@@ -65,7 +65,7 @@
       "yearOfPublishing": 2017
     },
     {
-      "bookId": 6,
+      "id": 6,
       "bookName": "Where The Stars Hide",
       "author": "Michael Chambers",
       "image": "https://i.ibb.co/p4f0Sn6/large-c05abc53bbba09206f7fc3d5a78817b4.jpg",
