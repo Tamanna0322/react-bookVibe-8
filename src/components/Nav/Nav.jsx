@@ -16,7 +16,7 @@ const Nav = () => {
                         <NavLink to='/read' className={({isActive}) => isActive ? 'text-green-600 font-bold hover:bg-green-600 hover:text-white' : 'font-semibold' }>Pages to Read</NavLink>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-2xl font-bold">Book Vibe</a>
+                <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

@@ -4,7 +4,7 @@ import Nav from "../Nav/Nav";
 
 const Root = () => {
     return (
-        <div className="max-w-7xl mx-auto md:mt-6 mt-3">
+        <div className="max-w-7xl mx-auto md:mt-6 mt-3 px-4">
             <div>
                 <Nav></Nav>
             </div>
