@@ -1,15 +1,27 @@
 import { useLoaderData, useParams } from "react-router-dom";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveBooks } from "../../utility/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
     const { id } = useParams();
     const parseId = parseInt(id);
     const book = books.find(book => book.id === parseId);
-    console.log(book);
+    // console.log(book);
+
+    const handleReadBtn = () =>{
+        saveBooks(id);
+        
+        //   toast.error("Error Notification !", {
+        //     position: "top-left"
+        //   });
+          
+    }
+
     return (
         <div className="flex justify-between mt-16 mb-8">
-            <div className="w-[42%] p-20 rounded-2xl bg-slate-200">
+            <div className="w-[42%] p-20 rounded-2xl bg-slate-100">
                 <img className="w-full h-[500px]" src={book.image} alt="" />
             </div>
             <div className="w-[53%]">
@@ -41,10 +53,11 @@ const BookDetails = () => {
                     </div>
                 </div>
                 <div className="mt-10 space-x-10">
-                    <button className="btn text-[#23BE0A] font-extrabold border px-6 py-3 border-[#23BE0A] rounded-lg hover:bg-[#23BE0A] hover:text-white">Read</button>
+                    <button onClick={handleReadBtn} className="btn text-[#23BE0A] font-extrabold border px-6 py-3 border-[#23BE0A] rounded-lg hover:bg-[#23BE0A] hover:text-white">Read</button>
                     <button className="btn text-[#50B1C9] font-extrabold border border-[#50B1C9] rounded-lg px-6 py-3 hover:bg-[#50B1C9] hover:text-white">Wishlist</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
