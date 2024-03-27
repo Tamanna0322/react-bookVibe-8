@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 
 const Books = () => {
     const [tabIndex, setTabIndex] = useState(0);
     return (
-        <div>
+        <div className="">
             <div className="bg-slate-200 mt-9 rounded-md py-5">
                 <h3 className="text-3xl font-bold text-center">Books</h3>
             </div>
@@ -29,6 +29,7 @@ const Books = () => {
                 </Link>
                
             </div>
+            <Outlet></Outlet>
         </div>
     );
 };

@@ -1,29 +1,42 @@
 
-const getStoredBooks = () =>{
-    const storedBooks = localStorage.getItem('books');
+const getStoredBooks = (key) =>{
+    const storedBooks = localStorage.getItem(key);
     if(storedBooks){
         return JSON.parse(storedBooks);
     }
     return [];
 }
 
-const saveWish = id =>{
-    const storedBooks = getStoredBooks();
-    const exist = storedBooks.find(bookId => bookId === id);
+const saveToLocal = (key, id) =>{
+    const storedData = getStoredBooks(key);
+    const exist = storedData.find(DataId => DataId === id);
     if(!exist){
-        storedBooks.push(id);
-        localStorage.setItem('books', JSON.stringify(storedBooks))
+        storedData.push(id);
+        localStorage.setItem(key, JSON.stringify(storedData))
     }
 }
 
-const saveBooks = id =>{
-    const storedBooks = getStoredBooks();
-    const exist = storedBooks.find(bookId => bookId === id);
-    if(!exist){
-        storedBooks.push(id);
-        localStorage.setItem('books', JSON.stringify(storedBooks))
-    }
-   
+const getReadBooks = () =>{
+    return getStoredBooks("readBooks");
 }
 
-export {getStoredBooks, saveBooks, saveWish};
+const saveReadBooks = id =>{
+    saveToLocal('readBooks', id);
+}
+
+const getWishlist = () =>{
+    return getStoredBooks('wishlist');
+}
+
+const saveWishlist = id =>{
+    saveToLocal('wishlist', id);
+}
+
+export {getReadBooks, saveReadBooks, getWishlist, saveWishlist, getStoredBooks};
+
+
+
+
+
+
+
