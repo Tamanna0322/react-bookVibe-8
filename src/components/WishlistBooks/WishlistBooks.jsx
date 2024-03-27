@@ -4,14 +4,14 @@ import { HiOutlineUsers } from "react-icons/hi2";
 import { PiBookBookmark } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 
-const BookCard = ({ bookCard }) => {
+const WishlistBooks = ({ wishlistBooks }) => {
+    const { id, image, tags, bookName, author, category, rating, yearOfPublishing, publisher, totalPages } = wishlistBooks;
 
-    const {id, image, tags, bookName, author, category, rating, yearOfPublishing, publisher, totalPages } = bookCard;
     return (
         <div className='mt-7'>
             <div className='flex flex-col md:flex-row justify-between border p-5 rounded-xl'>
                 <div className='md:w-[23%] bg-slate-100 md:p-12 p-14 rounded-xl flex items-center'>
-                    <img className='w-full rounded-lg md:h-[250px] ' src={image} alt="" />
+                    <img className='w-full rounded-lg md:h-[250px]' src={image} alt="" />
                 </div>
                 <div className='md:w-[74%]'>
                     <h3 className='md:text-4xl text-3xl mb-5 font-bold text-black'>{bookName}</h3>
@@ -35,11 +35,9 @@ const BookCard = ({ bookCard }) => {
                     <hr />
                     <div className='mt-5 flex md:space-x-6 space-x-3 items-center'>
                         <div className='text-[#328EFF] font-bold bg-[#328EFF26] py-3 rounded-3xl md:px-5 px-2 text-center'>Category: {category}</div>
-                        <div className='text-[#FFAC33] font-bold bg-[#FFAC3326] py-3 rounded-3xl text-center md:px-5 px-2'>Rating: {rating}</div>
-                        <div>
-                        <Link to={`/book/${id}`}  className="btn bg-[#23BE0A] md:px-5 md:py-3 rounded-3xl text-white">View Details</Link >
-                        </div>
-                         
+                        <div className='text-[#FFAC33] font-bold bg-[#FFAC3326] py-3 rounded-3xl md:px-5 px-2 text-center'>Rating: {rating}</div>
+                        <Link to={`/book/${id}`} className="btn bg-[#23BE0A] md:px-5 md:py-3 rounded-3xl text-white">View Details</Link >
+
                     </div>
                 </div>
             </div>
@@ -48,8 +46,8 @@ const BookCard = ({ bookCard }) => {
 };
 
 
-BookCard.propTypes = {
-    bookCard: PropTypes.object
+WishlistBooks.propTypes = {
+    wishlistBooks: PropTypes.object
 }
 
-export default BookCard;
+export default WishlistBooks;
