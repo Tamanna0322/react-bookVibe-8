@@ -5,6 +5,7 @@ import { PiBookBookmark } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 
 const BookCard = ({ bookCard }) => {
+    // console.log(bookCard)
 
     const {id, image, tags, bookName, author, category, rating, yearOfPublishing, publisher, totalPages } = bookCard;
     return (

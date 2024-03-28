@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import {
@@ -13,6 +12,8 @@ import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx';
 import ReadBooks from './components/ReadBooks/ReadBooks.jsx';
 import Wishlist from './components/Wishlist/Wishlist.jsx';
+import NewSec from './components/NewSec/NewSec.jsx';
+import React from 'react';
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/books",
         element: <Books></Books>,
+        loader: () => fetch('/books.json'),
         children: [
           {
             index: true,
@@ -50,6 +52,11 @@ const router = createBrowserRouter([
         path: "/book/:id",
         element: <BookDetails></BookDetails>,
         loader: () => fetch('/books.json')
+      },
+      {
+        path: '/children',
+        element: <NewSec></NewSec>,
+        loader: () => fetch('/child.json')
       }
     ]
   },

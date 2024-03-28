@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/C7FYTq7/large-270f8ccdb3e534a7079fb4aca9d20234.jpg",
+      "tags": ["Adventure", "Magic"],
+      "bookName": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "category": "Children's Fiction",
+      "rating": 4.5,
+      "review": "A heartwarming tale of friendship and magic that will captivate readers of all ages. With its lush descriptions and engaging characters, The Secret Garden transports readers to a world of wonder and discovery, reminding us of the transformative power of nature and the human spirit."
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/vsnc0WS/large-5f10bdc6635c8c0bc23d6d04dd35079a.jpg",
+      "tags": ["Adventure", "Detective"],
+      "bookName": "The Hardy Boys: The Tower Treasure",
+      "author": "Franklin W. Dixon",
+      "category": "Children's Mystery",
+      "rating": 4.2,
+      "review": "Exciting and suspenseful, The Hardy Boys series delivers thrilling adventures for young sleuths. With its clever plots and daring escapades, The Tower Treasure keeps readers on the edge of their seats, proving that solving mysteries is both challenging and rewarding."
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/jM3hczN/large-c4b71d35b017263c51ea767ab26e74e8.jpg",
+      "tags": [ "Adventure", "Friendship"],
+      "bookName": "Charlotte's Web",
+      "author": "E.B. White",
+      "category": "Children's Fiction",
+      "rating": 4.7,
+      "review": "An enchanting story that celebrates the bonds of friendship and the beauty of nature. Charlotte's Web is a timeless classic that touches the hearts of readers young and old, reminding us of the importance of compassion, loyalty, and the miracles that happen when we believe."
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/LNy3X7h/large-9632e1c4422d05772dea05d89a1ee9e2.jpg",
+      "tags": ["Fantasy", "Magic"],
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "category": "Children's Fantasy",
+      "rating": 4.8,
+      "review": "A spellbinding journey into a world of magic and wonder that will leave readers spellbound. Harry Potter and the Philosopher's Stone introduces readers to a magical universe brimming with adventure, friendship, and the battle between good and evil, captivating imaginations and inspiring generations."
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/VBmkzkb/large-0ccad37a7df6080471343acc9e0cb58a.jpg",
+      "tags": ["Adventure", "Mystery"],
+      "bookName": "The Famous Five: Five on a Treasure Island",
+      "author": "Enid Blyton",
+      "category": "Children's Mystery",
+      "rating": 4.4,
+      "review": "Join the Famous Five on an exciting treasure hunt adventure filled with mystery and fun! Five on a Treasure Island is the perfect blend of suspense, friendship, and adventure, keeping readers eagerly turning pages as they follow Julian, Dick, Anne, George, and Timmy the dog on their thrilling quest."
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/frTtn0X/large-96b8a4d0c8e779a53c37eb7d8de6b3b9.jpg",
+      "tags": [ "Friendship", "Travel"],
+      "bookName": "Around the World in Eighty Days",
+      "author": "Jules Verne",
+      "category": "Children's Adventure",
+      "rating": 4.6,
+      "review": "Embark on a thrilling journey around the globe with Phileas Fogg in this classic adventure tale. Around the World in Eighty Days is a captivating story of courage, determination, and the spirit of adventure, taking readers on a whirlwind tour of exotic locales and daring escapades."
+    }
+  ]
+  

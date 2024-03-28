@@ -20,7 +20,6 @@ const Read = () => {
             setBookSelect(selectBook);
         }
     }, [])
-    console.log(bookSelect);
 
 
     
