@@ -15,9 +15,10 @@ const Nav = () => {
                         <NavLink to='/books' className={({isActive}) => isActive ? 'text-green-600 font-bold hover:bg-green-600 hover:text-white' : 'font-semibold' }>Listed Books</NavLink>
                         <NavLink to='/read' className={({isActive}) => isActive ? 'text-green-600 font-bold hover:bg-green-600 hover:text-white' : 'font-semibold' }>Pages to Read</NavLink>
                         <NavLink to='/children' className={({isActive}) => isActive ? 'text-green-600 font-bold hover:bg-green-600 hover:text-white' : 'font-semibold' }>Child Section</NavLink>
+                        <NavLink to='/about' className={({isActive}) => isActive ? 'text-green-600 font-bold hover:bg-green-600 hover:text-white' : 'font-semibold' }>About Us</NavLink>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
+                <a className="btn btn-ghost text-3xl font-bold text-green-500">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -26,6 +27,7 @@ const Nav = () => {
                 <NavLink to='/books' className={({isActive}) => isActive ? 'text-green-600 font-bold border border-green-600 rounded-lg px-3 py-2 hover:bg-green-600 hover:text-white' : 'font-semibold' }>Listed Books</NavLink>
                 <NavLink to='/read' className={({isActive}) => isActive ? 'text-green-600 font-bold border border-green-600 rounded-lg px-3 py-2 hover:bg-green-600 hover:text-white' : 'font-semibold' }>Pages to Read</NavLink>
                 <NavLink to='/children' className={({isActive}) => isActive ? 'text-green-600 font-bold border border-green-600 rounded-lg px-3 py-2 hover:bg-green-600 hover:text-white' : 'font-semibold' }>Child Section</NavLink>
+                <NavLink to='/about' className={({isActive}) => isActive ? 'text-green-600 font-bold border border-green-600 rounded-lg px-3 py-2 hover:bg-green-600 hover:text-white' : 'font-semibold' }>About Us</NavLink>
                </div>
                 </ul>
             </div>

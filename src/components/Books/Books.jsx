@@ -1,25 +1,24 @@
 
-import { Link, Outlet } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useState } from "react";
-
-
-
+import ReadBooks from "../ReadBooks/ReadBooks";
+import Wishlist from "../Wishlist/Wishlist";
 
 
 const Books = () => {
     
     const [tabIndex, setTabIndex] = useState(0);
     const [sortCriteria, setSortCriteria] = useState(null);
-
     
 
+
     const handleSort = criteria =>{
-        console.log("Sort criteria:", criteria);
+        console.log(criteria);
         setSortCriteria(criteria);
     
     } 
-    console.log(sortCriteria)
+    
 
     return (
         <div className="">
@@ -55,8 +54,9 @@ const Books = () => {
                 </Link>
 
             </div>
-           
-            <Outlet></Outlet>
+               { tabIndex == 0 && <ReadBooks sortCriteria={sortCriteria}></ReadBooks>}
+           { tabIndex == 1 && <Wishlist></Wishlist>}
+         
         </div>
     );
 };

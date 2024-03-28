@@ -14,6 +14,7 @@ import ReadBooks from './components/ReadBooks/ReadBooks.jsx';
 import Wishlist from './components/Wishlist/Wishlist.jsx';
 import NewSec from './components/NewSec/NewSec.jsx';
 import React from 'react';
+import About from './components/About/About.jsx';
 
 
 const router = createBrowserRouter([
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
         path: '/children',
         element: <NewSec></NewSec>,
         loader: () => fetch('/child.json')
+      },
+      {
+        path: '/about',
+        element: <About></About>
       }
     ]
   },
