@@ -12,10 +12,21 @@ const BookDetails = () => {
     // console.log(book);
 
     const handleReadBtn = () =>{
-        saveReadBooks(parseId);
-        toast.success("Added to the ReadBooks List", {
-            position: "top-right"
-          });
+        
+        
+          const data = getReadBooks();
+        //   console.log(data);
+        if(data.includes(parseId)){
+            toast.error(" Already added to the read list", {
+                position: "top-right"
+              });
+        }
+        else{
+            saveReadBooks(parseId);
+            toast.success("Added to the ReadBooks List", {
+                position: "top-right"
+              });
+        }
           
     }
 
@@ -25,10 +36,15 @@ const BookDetails = () => {
           const bookBtn = getReadBooks();
           console.log(data, bookBtn, id);
 
-          if( bookBtn.includes(parseId)){
+          if(bookBtn.includes(parseId)){
                toast.error("You have Already read this Book", {
             position: "top-right"
           });
+          }
+          else if(data.includes(parseId)){
+            toast.error("Already added to the Wishlist", {
+                position: "top-right"
+              });
           }
           else{
             saveWishlist(parseId);

@@ -1,3 +1,19 @@
+
+# BookVibe
+
+Live Site: 
+
+
+## Features and Characteristics
+
+- Dynamic route content for easy navigation and exploration.
+- Interactive bar chart visualization for data analysis.
+- Book Cards displaying information about different books.
+- Book Details page gives the information about each book.
+- Dedicated child section for young readers.
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
